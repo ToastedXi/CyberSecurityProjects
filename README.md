@@ -48,7 +48,7 @@ A personal collection of hands on SOC projects and labs I've completed (or am wo
 | 2 | SOC Dashboard for IP Analysis (AbuseIPDB API) | Beginner     | Threat Intelligence   | Created a dashboard/script to query AbuseIPDB API, check IP reputation, and visualize malicious activity reports | Completed (Dec 2025)    | [View](https://github.com/ToastedXi/SOC-Analyst-Dashboard) |
 | 3 | Brute Force Attack Simulation & Detection with Wazuh | Beginner | SIEM / Alert Triage | Simulated brute force logon attempts from Kali attacker to Windows victim and analyzed failed login alerts in Wazuh | Completed (Jan 2026) | [View](https://github.com/ToastedXi/CyberSecurity-SOC-Projects/tree/main/Projects/1.%20Beginner%20Projects/Brute%20Force%20Attack%20Simulation) |
 
-> **Progress**: 3 Completed • 1 In Progress • 0 Planned  
+> **Progress**: 3 Completed • 0 In Progress • 0 Planned  
 > Last updated: January 2026
 
 ## SOC Labs
