@@ -1,7 +1,7 @@
 # 🛡️ AI-Powered SOC Analyst
 
 ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Projects-black?style=for-the-badge&logo=github)
-![Project](https://img.shields.io/badge/Project-17-red?style=for-the-badge)
+![Project](https://img.shields.io/badge/Project-04-red?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.14+-blue?style=for-the-badge&logo=python)
 ![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-purple?style=for-the-badge)
 ![Wazuh](https://img.shields.io/badge/Wazuh-SIEM-blue?style=for-the-badge)
