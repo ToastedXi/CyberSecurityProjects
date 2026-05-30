@@ -66,8 +66,9 @@ Hands on cybersecurity projects covering network security, threat intelligence, 
 |----------|------------|------------|--------|
 | [Packet Sniffer using Scapy](https://github.com/ToastedXi/Simple-Sniffer) | Network Security | 🟦 Beginner | ![Completed](https://img.shields.io/badge/Completed-brightgreen) |
 | [SOC Dashboard for IP Analysis](https://github.com/ToastedXi/SOC-Analyst-Dashboard) | Threat Intelligence | 🟦 Beginner | ![Completed](https://img.shields.io/badge/Completed-brightgreen) |
+| [Brute Force Attack Simulation & Detection with Wazuh](https://github.com/ToastedXi/CyberSecurityProjects/tree/dbfb0a4128aabc1658aced6bc0241b5f8beda04b/Projects/2.%20Intermediate%20Projects/) | Detection Engineering | 🟧 Intermediate | ![Completed](https://img.shields.io/badge/Completed-brightgreen) |
 | [Brute Force Attack Simulation & Detection with Wazuh](https://github.com/ToastedXi/CyberSecurity-SOC-Projects/tree/main/Projects/1.%20Beginner%20Projects/Brute%20Force%20Attack%20Simulation) | Detection Engineering | 🟦 Beginner | ![Completed](https://img.shields.io/badge/Completed-brightgreen) |
-| Active Directory Home Lab | Windows Security | 🟧 Intermediate | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
+| Active Directory Home Lab | Windows Security | 🟧 Intermediate | ![Planned](https://img.shields.io/badge/Planned-lightgrey) | AI%20Powered%20Soc%20Analyst
 | Malware Traffic Analysis | Network Forensics | 🟧 Intermediate | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
 | Threat Hunting Lab | Threat Hunting | 🟥 Advanced | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
 
