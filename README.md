@@ -72,7 +72,7 @@ Hands on cybersecurity projects covering network security, threat intelligence, 
 | Malware Traffic Analysis | Network Forensics | 🟧 Intermediate | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
 | Threat Hunting Lab | Threat Hunting | 🟥 Advanced | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
 
-> **Progress:** 3 Completed • 0 In Progress • 3 Planned  
+> **Progress:** 4 Completed • 0 In Progress • 3 Planned  
 > **Last Updated:** May 2026
 
 ---
