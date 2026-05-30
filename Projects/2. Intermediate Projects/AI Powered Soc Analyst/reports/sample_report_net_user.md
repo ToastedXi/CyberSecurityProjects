@@ -26,7 +26,7 @@ The command `net.exe user` was executed from a PowerShell process, which is comm
 
 ### Wazuh Alert Screenshot
 
-![Wazuh Alert - Local Account Discovery](../screenshots/threat-hunting-net-user.png)
+![Wazuh Detection - ipconfig](screenshots/threat-hunting-net-user.png)
 
 ### Agent
 
