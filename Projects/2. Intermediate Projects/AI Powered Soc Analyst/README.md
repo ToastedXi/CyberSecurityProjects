@@ -288,7 +288,7 @@ for privilege escalation or lateral movement.
 
 ## 📄 License
 
-AGPL v3
+MIT
 
 ---
 
