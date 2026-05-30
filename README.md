@@ -1,80 +1,148 @@
 ![Kali Linux Dragon](https://i.pinimg.com/1200x/97/d0/56/97d0561be61dc6c301c2f32749a723b6.jpg)
-<!-- High-res transparent Kali dragon – centered perfectly on dark theme -->
 
 <div align="center">
 
-# SOC Cybersecurity Projects 🛡️
+# Cybersecurity Projects 🛡️
 
-**Hands on SOC Projects & Labs to Build Real World Security Operations Experience** 🔍
+**A collection of cybersecurity projects, labs, research, and tools covering blue team, red team, network security, threat intelligence, detection engineering, security automation, and more.**
 
-[![Stars](https://img.shields.io/github/stars/ToastedXi/CyberSecurity-SOC-Projects?style=social)](https://github.com/ToastedXi/CyberSecurity-SOC-Projects/stargazers)
-[![Forks](https://img.shields.io/github/forks/ToastedXi/CyberSecurity-SOC-Projects?style=social)](https://github.com/ToastedXi/CyberSecurity-SOC-Projects/network/members)
-[![Issues](https://img.shields.io/github/issues/ToastedXi/CyberSecurity-SOC-Projects)](https://github.com/ToastedXi/CyberSecurity-SOC-Projects/issues)
-[![License](https://img.shields.io/github/license/ToastedXi/CyberSecurity-SOC-Projects)](https://github.com/ToastedXi/CyberSecurity-SOC-Projects/blob/main/LICENSE)
+[![Stars](https://img.shields.io/github/stars/ToastedXi/CyberSecurity-Projects?style=social)](https://github.com/ToastedXi/CyberSecurity-Projects/stargazers)
+[![Forks](https://img.shields.io/github/forks/ToastedXi/CyberSecurity-Projects?style=social)](https://github.com/ToastedXi/CyberSecurity-Projects/network/members)
+[![Issues](https://img.shields.io/github/issues/ToastedXi/CyberSecurity-Projects)](https://github.com/ToastedXi/CyberSecurity-Projects/issues)
+[![License](https://img.shields.io/github/license/ToastedXi/CyberSecurity-Projects)](https://github.com/ToastedXi/CyberSecurity-Projects/blob/main/LICENSE)
 
-[![Progress](https://img.shields.io/badge/Projects_Completed-3%2F7-blue)](https://github.com/ToastedXi/CyberSecurity-SOC-Projects#projects--labs)
-
-<br>
-
-[![Beginner Labs](https://img.shields.io/badge/Beginner-Labs-blue)]()
-[![Intermediate Labs](https://img.shields.io/badge/Intermediate-Labs-orange)]()
-[![Advanced Labs](https://img.shields.io/badge/Advanced-Labs-red)]()
+[![Progress](https://img.shields.io/badge/Projects_Completed-3-blue)](#projects)
 
 <br>
 
-[![Certified Phishing Prevention Specialist (CPPS)](https://img.shields.io/badge/Certification-CPPS-brightgreen?style=flat-square)](https://github.com/ToastedXI/CyberSecurity-SOC-Projects/tree/main/SOC%20Labs/Certified%20Phishing%20Prevention%20Specialist%20(CPPS))
+[![Beginner](https://img.shields.io/badge/Beginner-Projects-blue)]()
+[![Intermediate](https://img.shields.io/badge/Intermediate-Projects-orange)]()
+[![Advanced](https://img.shields.io/badge/Advanced-Projects-red)]()
 
 </div>
 
+---
+
 ## Table of Contents
 
+- [About](#about)
 - [Projects](#projects)
-   - [Beginner Projects](#projects)
-   - [Intermediate Projects](#projects)
-   - [Advanced Projects](#projects)
-- [SOC Labs](#soc-labs)
+- [Labs & Training](#labs--training)
 - [Tools & Scripts](#tools--scripts)
 - [Resources](#resources)
+- [Contributing](#contributing)
 - [License](#license)
 
+---
 
-## Projects & Labs
+## About
 
-A personal collection of hands on SOC projects and labs I've completed (or am working on) to gain real world experience. Each includes detailed write ups, screenshots, tools used, and key takeaways in its folder.
+This repository serves as my cybersecurity portfolio, showcasing projects, labs, tools, and research completed throughout my learning journey.
 
-| # | Title                                      | Difficulty   | Category              | Description                                                                 | Status                  | Folder Link                                   |
-|---|--------------------------------------------|--------------|-----------------------|-----------------------------------------------------------------------------|-------------------------|-----------------------------------------------|
-| 1 | Packet Sniffer using Scapy                 | Beginner     | Network Forensics     | Built a custom packet sniffer in Python to capture, filter, and analyze network traffic | Completed (Dec 2025)    | [View](https://github.com/ToastedXi/Simple-Sniffer) |
-| 2 | SOC Dashboard for IP Analysis (AbuseIPDB API) | Beginner     | Threat Intelligence   | Created a dashboard/script to query AbuseIPDB API, check IP reputation, and visualize malicious activity reports | Completed (Dec 2025)    | [View](https://github.com/ToastedXi/SOC-Analyst-Dashboard) |
-| 3 | Brute Force Attack Simulation & Detection with Wazuh | Beginner | SIEM / Alert Triage | Simulated brute force logon attempts from Kali attacker to Windows victim and analyzed failed login alerts in Wazuh | Completed (Jan 2026) | [View](https://github.com/ToastedXi/CyberSecurity-SOC-Projects/tree/main/Projects/1.%20Beginner%20Projects/Brute%20Force%20Attack%20Simulation) |
+The objective is to gain practical experience across multiple cybersecurity disciplines while documenting methodologies, tools, challenges, and lessons learned.
 
-> **Progress**: 3 Completed • 0 In Progress • 0 Planned  
-> Last updated: January 2026
+Areas covered include:
 
-## SOC Labs
+- Security Operations (SOC)
+- Threat Detection & Incident Response
+- Threat Intelligence
+- Network Security
+- Digital Forensics
+- Detection Engineering
+- Security Automation
+- Malware Analysis
+- Red Team Fundamentals
+- Cloud Security
 
-Completed hands on guided labs from blue team platforms to deepen SOC analyst skills (alert investigation, log analysis, threat detection, incident response). Each is documented in its folder with step by step write ups, key learnings, challenges overcome, and screenshots.
+Each project includes documentation, screenshots, tools used, and key takeaways.
 
-- **[TryHackMe SOC Level 1 Path]() [In Progress]**
+---
+
+## Projects
+
+| # | Title | Difficulty | Category | Description | Status | Repository |
+|---|---------|------------|----------|-------------|---------|------------|
+| 1 | Packet Sniffer using Scapy | Beginner | Network Security | Built a custom packet sniffer in Python to capture, filter, and analyze network traffic. | Completed (Dec 2025) | [View](https://github.com/ToastedXi/Simple-Sniffer) |
+| 2 | SOC Dashboard for IP Analysis (AbuseIPDB API) | Beginner | Threat Intelligence | Developed a dashboard that queries the AbuseIPDB API to investigate IP reputation and visualize reported malicious activity. | Completed (Dec 2025) | [View](https://github.com/ToastedXi/SOC-Analyst-Dashboard) |
+| 3 | Brute Force Attack Simulation & Detection with Wazuh | Beginner | Detection Engineering | Simulated brute force authentication attacks against a Windows target and investigated resulting alerts using Wazuh. | Completed (Jan 2026) | [View](https://github.com/ToastedXi/CyberSecurity-SOC-Projects/tree/main/Projects/1.%20Beginner%20Projects/Brute%20Force%20Attack%20Simulation) |
+
+> **Progress:** 3 Completed • 0 In Progress • 0 Planned  
+> **Last Updated:** January 2026
+
+---
+
+## Labs & Training
+
+Hands-on labs completed through cybersecurity training platforms, certifications, and self-hosted environments.
+
+| Platform | Path / Course | Status |
+|-----------|---------------|---------|
+| TryHackMe | SOC Level 1 Path | In Progress |
+| TryHackMe | Additional Rooms & Challenges | Planned |
+| Hack The Box | Labs & Machines | Planned |
+| Blue Team Labs Online | Detection & Investigation Labs | Planned |
+
+---
+
+## Tools & Scripts
+
+A collection of custom-built tools, utilities, and automation scripts used throughout projects and labs.
+
+Examples include:
+
+- Python Security Tools
+- Threat Intelligence Utilities
+- Detection & Monitoring Scripts
+- Network Analysis Tools
+- Log Analysis Automation
+- API Integrations
+- Security Dashboards
+
+---
 
 ## Resources
 
-Useful references for SOC/Blue Team learning:
+### Certifications
 
-- **Certifications**: CompTIA Security+, CySA+, Splunk Core Certified User, SAL1
-- **Books**: Blue Team Handbook, Practical Malware Analysis
-- **Roadmaps**: [Cyber Security Expert](https://roadmap.sh/cyber-security)
+- CompTIA Security+
+- CompTIA CySA+
+- Certified Phishing Prevention Specialist (CPPS)
+- Splunk Core Certified User
+- Security Blue Team Level 1 (Planned)
+
+### Books
+
+- Blue Team Handbook
+- Practical Malware Analysis
+- The Web Application Hacker's Handbook
+- The Hacker Playbook
+
+### Learning Platforms
+
+- [Roadmap.sh Cyber Security](https://roadmap.sh/cyber-security)
+- TryHackMe
+- Hack The Box
+- Blue Team Labs Online
+- OWASP
+
+---
 
 ## Contributing
 
-Contributions welcome! Feel free to open issues or PRs for suggestions, new project ideas, or fixes. ❤️
+Contributions, suggestions, and feedback are welcome.
+
+Feel free to open an issue or submit a pull request for improvements, project ideas, or corrections.
+
+---
 
 ## License
 
 This repository is licensed under the [MIT License](LICENSE).
 
+---
+
 <div align="center">
 
-Made with ❤️ by [Brodie](https://github.com/ToastedXi)
+Built and maintained by **[Brodie](https://github.com/ToastedXi)**
 
 </div>
