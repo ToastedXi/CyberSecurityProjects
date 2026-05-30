@@ -12,7 +12,7 @@
 
 ## 📖 Overview
 
-AI-Powered SOC Analyst is a Security Operations (SOC) automation project that ingests endpoint telemetry from Wazuh, analyzes security events, maps activity to the MITRE ATT&CK framework, and automatically generates incident reports.
+AI Powered SOC Analyst is a Security Operations (SOC) automation project that ingests endpoint telemetry from Wazuh, analyzes security events, maps activity to the MITRE ATT&CK framework, and automatically generates incident reports.
 
 The goal of the project is to simulate the workflow of a real SOC analyst by automating alert triage, enrichment, and reporting.
 
