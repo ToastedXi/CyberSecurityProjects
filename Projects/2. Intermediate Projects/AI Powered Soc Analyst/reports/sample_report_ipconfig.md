@@ -28,7 +28,7 @@ This activity is commonly associated with system and network reconnaissance.
 
 ### Wazuh Alert Screenshot
 
-![Wazuh Detection - ipconfig](../screenshots/threat-hunting-ipconfig.png)
+![Wazuh Detection - ipconfig](screenshots/threat-hunting-ipconfig.png)
 
 *Figure 1: Wazuh detection showing execution of `ipconfig.exe /all` from a PowerShell parent process.*
 
