@@ -60,14 +60,19 @@ Each project includes documentation, screenshots, tools used, and key takeaways.
 
 ## Projects
 
-| # | Title | Difficulty | Category | Description | Status | Repository |
-|---|---------|------------|----------|-------------|---------|------------|
-| 1 | Packet Sniffer using Scapy | Beginner | Network Security | Built a custom packet sniffer in Python to capture, filter, and analyze network traffic. | Completed (Dec 2025) | [View](https://github.com/ToastedXi/Simple-Sniffer) |
-| 2 | SOC Dashboard for IP Analysis (AbuseIPDB API) | Beginner | Threat Intelligence | Developed a dashboard that queries the AbuseIPDB API to investigate IP reputation and visualize reported malicious activity. | Completed (Dec 2025) | [View](https://github.com/ToastedXi/SOC-Analyst-Dashboard) |
-| 3 | Brute Force Attack Simulation & Detection with Wazuh | Beginner | Detection Engineering | Simulated brute force authentication attacks against a Windows target and investigated resulting alerts using Wazuh. | Completed (Jan 2026) | [View](https://github.com/ToastedXi/CyberSecurity-SOC-Projects/tree/main/Projects/1.%20Beginner%20Projects/Brute%20Force%20Attack%20Simulation) |
+Hands on cybersecurity projects covering network security, threat intelligence, detection engineering, automation, and security operations.
 
-> **Progress:** 3 Completed • 0 In Progress • 0 Planned  
-> **Last Updated:** January 2026
+| Project | Category | Difficulty | Status |
+|----------|------------|------------|--------|
+| [Packet Sniffer using Scapy](https://github.com/ToastedXi/Simple-Sniffer) | Network Security | 🟦 Beginner | ![Completed](https://img.shields.io/badge/Completed-brightgreen) |
+| [SOC Dashboard for IP Analysis](https://github.com/ToastedXi/SOC-Analyst-Dashboard) | Threat Intelligence | 🟦 Beginner | ![Completed](https://img.shields.io/badge/Completed-brightgreen) |
+| [Brute Force Attack Simulation & Detection with Wazuh](https://github.com/ToastedXi/CyberSecurity-SOC-Projects/tree/main/Projects/1.%20Beginner%20Projects/Brute%20Force%20Attack%20Simulation) | Detection Engineering | 🟦 Beginner | ![Completed](https://img.shields.io/badge/Completed-brightgreen) |
+| Active Directory Home Lab | Windows Security | 🟧 Intermediate | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
+| Malware Traffic Analysis | Network Forensics | 🟧 Intermediate | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
+| Threat Hunting Lab | Threat Hunting | 🟥 Advanced | ![Planned](https://img.shields.io/badge/Planned-lightgrey) |
+
+> **Progress:** 3 Completed • 0 In Progress • 3 Planned  
+> **Last Updated:** May 2026
 
 ---
 
