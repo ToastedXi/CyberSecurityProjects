@@ -1,4 +1,6 @@
-# 🛡️ SaaS OAuth Security Scanner
+# 🛡️ SaaS Security Posture Management (SSPM) Platform
+
+### OAuth, GitHub & Security Posture Assessment
 
 ---
 
@@ -15,42 +17,25 @@
 
 ## 📖 Overview
 
-**SaaS OAuth Security Scanner** is a security automation and SaaS Security Posture Management (SSPM) project designed to identify risky SaaS integrations, excessive OAuth permissions, repository security weaknesses, CI/CD attack surface exposure, and GitHub security posture issues.
+The **SaaS Security Posture Management (SSPM) Platform** is a security automation project designed to assess SaaS integrations, OAuth permissions, GitHub repositories, CI/CD workflows, and overall security posture.
 
-The platform collects evidence from live SaaS environments, performs security analysis, generates risk findings, maps findings to MITRE ATT&CK, provides remediation guidance, stores historical assessments, and visualizes results through a modern Streamlit dashboard.
+The platform collects evidence from live SaaS environments, performs automated security analysis, generates risk findings, maps findings to the MITRE ATT&CK framework, provides remediation guidance, stores historical assessments, and visualizes results through a modern security dashboard.
 
-The goal of this project is to simulate the workflow of modern SSPM platforms such as:
+The project was inspired by commercial SSPM solutions such as:
 
 * Microsoft Defender for Cloud Apps
 * Wing Security
+* Obsidian Security
 * Grip Security
 * Nudge Security
-* Obsidian Security
 
-while demonstrating practical security engineering, automation, and risk analysis skills.
-
----
-
-## 🎯 Objectives
-
-* Collect live SaaS security data from the GitHub API
-* Assess OAuth permissions and access scopes
-* Identify excessive permissions
-* Detect dormant SaaS integrations
-* Evaluate GitHub repository exposure
-* Analyze GitHub Actions workflow attack surface
-* Assess branch protection posture
-* Generate risk scores
-* Map findings to MITRE ATT&CK
-* Generate remediation guidance
-* Store historical assessments
-* Visualize results through a dashboard
+The objective was to gain hands-on experience building a platform that provides visibility into SaaS risk, OAuth exposure, and repository security posture.
 
 ---
 
 ## 🌎 Real World Problem
 
-Modern organizations rely heavily on SaaS platforms such as:
+Modern organizations depend heavily on SaaS applications such as:
 
 * Microsoft 365
 * Google Workspace
@@ -68,17 +53,36 @@ These applications may receive permissions capable of:
 * Sending email
 * Accessing cloud storage
 * Accessing source code
+* Managing repositories
 * Modifying CI/CD pipelines
 * Maintaining persistent OAuth access
 
-Security teams often lack visibility into:
+Security teams often struggle to answer questions such as:
 
-* Which applications have access
-* What permissions were granted
-* Whether applications are still in use
-* Which integrations create security risk
+* Which applications have access?
+* What permissions were granted?
+* Are those permissions still required?
+* Are applications still actively used?
+* Which integrations introduce security risk?
 
-This project was created to address that visibility gap.
+This project was built to simulate how security teams identify and manage those risks.
+
+---
+
+## 🎯 Objectives
+
+* Collect live SaaS security evidence
+* Analyze OAuth permissions and access scopes
+* Identify excessive permissions
+* Detect dormant integrations
+* Assess repository exposure
+* Evaluate GitHub Actions workflows
+* Assess branch protection posture
+* Generate security findings
+* Map findings to MITRE ATT&CK
+* Provide remediation recommendations
+* Track security posture over time
+* Visualize results through a security dashboard
 
 ---
 
@@ -114,13 +118,13 @@ Streamlit Dashboard
 
 ---
 
-## ⚙️ Core Features
+## ⚙️ Security Assessments
 
 ### 🔐 OAuth Security Assessment
 
-Analyzes SaaS applications and OAuth permissions.
+The platform evaluates OAuth permissions and access scopes to identify risky integrations.
 
-Example permissions:
+Examples include:
 
 ```text
 Mail.Read
@@ -136,92 +140,122 @@ admin:org
 delete_repo
 ```
 
-Security findings include:
+Potential findings include:
 
 * Excessive permissions
 * Dormant applications
-* Organization-wide admin consent
 * Unknown publishers
+* Organization-wide admin consent
 * Broad repository access
 
 ---
 
 ### 📦 GitHub Repository Assessment
 
-Uses the GitHub REST API to collect live repository evidence.
+The platform analyzes repository security posture and exposure.
 
-Analyzes:
+Assessment areas include:
 
 * Public repositories
-* Repository ownership
 * Repository visibility
+* Repository ownership
 * Archived repositories
 * Forked repositories
-* Open issue counts
-
-Example finding:
-
-```text
-Medium Risk
-
-Public GitHub Repository Detected
-
-Business Impact:
-Source code exposure increases organizational attack surface.
-```
+* Open issues
 
 ---
 
 ### 🔁 GitHub Actions Workflow Assessment
 
-Detects:
+The platform evaluates CI/CD attack surface exposure through GitHub Actions.
 
-* GitHub Actions workflows
-* CI/CD attack surface exposure
-* Excessive workflow usage
+Assessment areas include:
 
-Example finding:
-
-```text
-Medium Risk
-
-GitHub Actions Workflow Detected
-
-Business Impact:
-Compromised workflows may expose secrets or modify deployments.
-```
+* Workflow usage
+* CI/CD exposure
+* Repository automation
+* Pipeline attack surface
 
 ---
 
 ### 🌿 Branch Protection Assessment
 
-Evaluates:
+The platform evaluates repository governance controls.
+
+Assessment areas include:
 
 * Default branch protection
-* Repository governance controls
+* Pull request review requirements
+* Direct push restrictions
+* Repository protection policies
 
-Detects repositories where:
+---
 
-* Direct pushes are possible
-* Pull request reviews are not enforced
-* Branch protection is disabled
+## 🚨 Example Findings
 
-Example finding:
+### Medium Risk
 
-```text
-High Risk
+**Public GitHub Repository Detected**
 
-Default Branch Not Protected
+Platform: GitHub
 
 Business Impact:
-Attackers or accidental changes may modify production code without review.
-```
+
+Public repositories may expose source code, documentation, and configuration information that could assist attackers during reconnaissance activities.
+
+Recommendation:
+
+Review repository visibility settings and restrict access where appropriate.
+
+MITRE ATT&CK:
+
+* T1213 – Data from Information Repositories
+
+---
+
+### High Risk
+
+**Missing Branch Protection**
+
+Platform: GitHub
+
+Business Impact:
+
+Production code may be modified without review, increasing the risk of unauthorized changes.
+
+Recommendation:
+
+Require pull request reviews and enable branch protection controls.
+
+MITRE ATT&CK:
+
+* T1098 – Account Manipulation
+
+---
+
+### Medium Risk
+
+**Dormant SaaS Integration**
+
+Platform: OAuth
+
+Business Impact:
+
+Unused applications may retain access to organizational resources and increase attack surface.
+
+Recommendation:
+
+Review and remove unused integrations.
+
+MITRE ATT&CK:
+
+* T1078 – Valid Accounts
 
 ---
 
 ## 🧠 MITRE ATT&CK Mapping
 
-Findings are mapped to MITRE ATT&CK techniques including:
+Findings are mapped to relevant ATT&CK techniques.
 
 | Technique | Description                        |
 | --------- | ---------------------------------- |
@@ -238,7 +272,7 @@ Findings are mapped to MITRE ATT&CK techniques including:
 
 ## 📊 Risk Scoring Methodology
 
-Every finding contributes to an overall risk score.
+The platform assigns points to findings and calculates an overall risk score.
 
 Example scoring:
 
@@ -246,7 +280,7 @@ Example scoring:
 | ------------------------- | ------ |
 | Mail.ReadWrite            | +35    |
 | Admin Consent             | +15    |
-| Dormant App               | +20    |
+| Dormant Application       | +20    |
 | Unknown Publisher         | +15    |
 | Public Repository         | +20    |
 | Missing Branch Protection | +30    |
@@ -255,123 +289,80 @@ Example scoring:
 
 | Score  | Rating   |
 | ------ | -------- |
-| 0-29   | Low      |
-| 30-59  | Medium   |
-| 60-79  | High     |
-| 80-100 | Critical |
+| 0–29   | Low      |
+| 30–59  | Medium   |
+| 60–79  | High     |
+| 80–100 | Critical |
 
 ---
 
 ## 🔍 Evidence Collection
 
-The scanner collects evidence directly from live SaaS environments.
+The platform collects supporting evidence from SaaS environments to validate findings.
 
-Example:
+Example evidence:
 
 ```json
 {
   "github_user": "ToastedXi",
-  "public_repos": 7,
-  "repository": "ToastedXi/MyProject",
+  "public_repositories": 7,
+  "repository": "ExampleRepo",
   "workflow_count": 3
 }
 ```
 
-All findings are backed by evidence collected from API responses.
+All findings are supported by collected evidence to provide context and support remediation decisions.
 
 ---
 
-## 🗄️ Database and Historical Tracking
+## 🗄️ Historical Tracking
 
-Assessment results are stored in SQLite.
+Assessment results are stored and tracked over time.
 
-Stored information includes:
+Historical tracking enables:
 
-* Assessment source
-* Assessment timestamp
-* Findings
-* Risk scores
-* Evidence
-
-This enables:
-
-* Historical analysis
-* Security posture tracking
-* Executive reporting
+* Security posture monitoring
 * Trend analysis
+* Executive reporting
+* Risk reduction measurement
+* Security improvement tracking
+
+Example:
+
+```text
+Assessment 1 → Risk Score 62
+Assessment 2 → Risk Score 54
+Assessment 3 → Risk Score 41
+```
+
+This provides visibility into how security posture changes over time.
 
 ---
 
-## 📈 Trend Analysis
+## 📄 Executive Reporting
 
-The project supports historical assessment tracking.
+The platform generates executive-focused reports that summarize:
 
-Examples:
+* Security posture
+* Risk levels
+* Findings
+* MITRE ATT&CK mappings
+* Business impact
+* Remediation recommendations
 
-```text
-GitHub Repositories
-├── Assessment #1
-├── Assessment #2
-└── Assessment #3
-
-Trend:
-Risk Reduced 18%
-```
-
-Future versions can visualize:
-
-* Risk reduction over time
-* New findings
-* Resolved findings
-* Security posture improvement
+These reports are intended to support communication between security teams and leadership.
 
 ---
 
-## 📄 Reporting
+## 📊 Security Dashboard
 
-The platform generates multiple reports.
-
-### OAuth Report
-
-```text
-reports/oauth_security_report.md
-```
-
-### Repository Report
-
-```text
-reports/github_repo_report.md
-```
-
-### Workflow Report
-
-```text
-reports/github_workflow_report.md
-```
-
-### Branch Protection Report
-
-```text
-reports/github_branch_report.md
-```
-
-### Executive Report
-
-```text
-reports/executive_report.md
-```
-
----
-
-## 📊 Streamlit Dashboard
-
-The project includes a modern dashboard for visualizing security posture.
+A modern Streamlit dashboard was developed to visualize security posture.
 
 ### Dashboard Features
 
 * Live scan execution
-* Risk metrics
 * Historical assessment tracking
+* Risk metrics
 * Findings explorer
 * Evidence explorer
 * Source filtering
@@ -379,12 +370,12 @@ The project includes a modern dashboard for visualizing security posture.
 * Risk filtering
 * Trend visibility
 
-### Supported Scans
+### Supported Assessments
 
-* GitHub OAuth Assessment
+* OAuth Security Assessment
 * GitHub Repository Assessment
-* GitHub Workflow Assessment
-* GitHub Branch Protection Assessment
+* GitHub Actions Assessment
+* Branch Protection Assessment
 
 ---
 
@@ -398,143 +389,21 @@ The project includes a modern dashboard for visualizing security posture.
 
 ![Live Scan Controls](screenshots/02-run-live-scans.png)
 
+### Risk Metrics
+
+![Risk Metrics](screenshots/03-risk-metrics.png)
+
 ### Findings Explorer
 
-![Findings Explorer](screenshots/03-findings-table.png)
+![Findings Explorer](screenshots/04-findings-explorer.png)
 
 ### Evidence Viewer
 
-![Evidence Viewer](screenshots/04-finding-detail-evidence.png)
+![Evidence Viewer](screenshots/05-evidence-viewer.png)
 
-### Repository Assessment
+### Executive Reporting
 
-![Repository Assessment](screenshots/05-github-repo-report.png)
-
-### Branch Protection Assessment
-
-![Branch Protection Assessment](screenshots/06-github-branch-report.png)
-
----
-
-## 📂 Project Structure
-
-```text
-SaaS OAuth Security Scanner/
-│
-├── main.py
-├── dashboard.py
-├── view_history.py
-├── view_trends.py
-├── generate_executive_report.py
-│
-├── scanner/
-│   ├── database.py
-│   ├── evidence.py
-│   ├── findings.py
-│   ├── mitre.py
-│   ├── remediation.py
-│   ├── scoring.py
-│   ├── report.py
-│   ├── report_repos.py
-│   ├── report_workflows.py
-│   ├── executive_report.py
-│   ├── github_connector.py
-│   ├── github_repos.py
-│   ├── github_repo_risk.py
-│   ├── github_workflows.py
-│   ├── github_workflow_risk.py
-│   ├── github_branch_protection.py
-│   └── github_branch_risk.py
-│
-├── data/
-│   ├── mock_apps.json
-│   └── assessments.db
-│
-├── reports/
-│
-└── screenshots/
-```
-
----
-
-## 🚀 Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/ToastedXi/CyberSecurityProjects.git
-```
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 🔧 Environment Variables
-
-Create a `.env` file:
-
-```env
-GITHUB_TOKEN=your_github_token_here
-CLIENT_ID=
-CLIENT_SECRET=
-TENANT_ID=
-```
-
----
-
-## ▶️ Usage
-
-### OAuth Assessment
-
-```bash
-python main.py --source github
-```
-
-### Repository Assessment
-
-```bash
-python main.py --source github-repos
-```
-
-### Workflow Assessment
-
-```bash
-python main.py --source github-workflows
-```
-
-### Branch Protection Assessment
-
-```bash
-python main.py --source github-branches
-```
-
-### View Historical Assessments
-
-```bash
-python view_history.py
-```
-
-### View Trend Summary
-
-```bash
-python view_trends.py
-```
-
-### Generate Executive Report
-
-```bash
-python generate_executive_report.py
-```
-
-### Launch Dashboard
-
-```bash
-streamlit run dashboard.py
-```
+![Executive Reporting](screenshots/06-executive-report.png)
 
 ---
 
@@ -554,46 +423,65 @@ streamlit run dashboard.py
 * Python
 * REST APIs
 * GitHub API Integration
-* Streamlit
 * SQLite
-* JSON Processing
-* Data Analysis
+* Streamlit Dashboard Development
+* Data Processing and Analysis
 
 ### Security Operations
 
 * Evidence Collection
-* Security Dashboard Development
+* Security Monitoring
 * Historical Assessment Tracking
 * Executive Reporting
 * Risk Prioritization
+* Security Metrics
 
 ---
 
-## 🔮 Future Enhancements
+## 📚 Lessons Learned
+
+Through this project I gained practical experience with:
+
+* Building security automation workflows
+* Consuming and analyzing API data
+* Designing risk scoring methodologies
+* Mapping findings to MITRE ATT&CK
+* Developing security dashboards
+* Creating executive security reports
+* Storing and analyzing historical security data
+* Translating technical findings into business impact
+
+This project provided hands-on exposure to concepts commonly used within modern SaaS Security Posture Management platforms.
+
+---
+
+## 🔮 Future Improvements
+
+Future enhancements may include:
 
 * Slack Integration
 * Microsoft Graph Integration
 * Google Workspace Integration
-* PDF Executive Reports
 * Secrets Detection
-* Risk Trend Charts
-* Finding Lifecycle Tracking
+* PDF Executive Reports
+* Risk Trend Visualization
 * Scheduled Scanning
-* Email Alerts
+* Email Alerting
+* Finding Lifecycle Tracking
 * Security Scorecards
 
 ---
 
 ## ⚠️ Security Notice
 
-This project is intended for:
+This project was developed for:
 
 * Defensive security research
+* Security engineering practice
 * Learning and education
 * Portfolio development
-* Authorized security assessments
 
-Do not use this project against systems, repositories, workspaces, or SaaS environments without explicit authorization.
+Only assess systems, repositories, workspaces, and SaaS environments that you own or have explicit authorization to test.
 
 ---
 
@@ -607,5 +495,4 @@ GitHub: https://github.com/ToastedXi
 
 ---
 
-> Built to demonstrate SaaS Security Posture Management (SSPM), OAuth Security Analysis, Security Automation, Risk Assessment, MITRE ATT&CK Mapping, and Security Engineering concepts.
-
+> Built to demonstrate SaaS Security Posture Management (SSPM), OAuth Security Analysis, Security Automation, Security Engineering, MITRE ATT&CK Mapping, Risk Assessment, Historical Security Tracking, and Security Dashboard Development.
