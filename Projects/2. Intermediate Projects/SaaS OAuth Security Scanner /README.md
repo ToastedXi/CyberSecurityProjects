@@ -411,27 +411,27 @@ A modern Streamlit dashboard was developed to visualize security posture.
 
 ### Dashboard Overview
 
-![Dashboard Overview](screenshots/01-dashboard-overview.png)
+![Dashboard Overview](screenshots/dashboard.png)
 
 ### Live Scan Controls
 
-![Live Scan Controls](screenshots/02-run-live-scans.png)
+![Live Scan Controls](screenshots/livescan.png)
 
 ### Risk Metrics
 
-![Risk Metrics](screenshots/03-risk-metrics.png)
+![Risk Metrics](screenshots/riskmetric.png)
 
 ### Findings Explorer
 
-![Findings Explorer](screenshots/04-findings-explorer.png)
+![Findings Explorer](screenshots/findings.png)
 
 ### Evidence Viewer
 
-![Evidence Viewer](screenshots/05-evidence-viewer.png)
+![Evidence Viewer](screenshots/evidence.png)
 
 ### Executive Reporting
 
-![Executive Reporting](screenshots/06-executive-report.png)
+![Executive Reporting](screenshots/executive-report.png)
 
 ---
 
