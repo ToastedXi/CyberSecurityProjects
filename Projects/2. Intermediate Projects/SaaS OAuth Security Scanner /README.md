@@ -376,62 +376,6 @@ Medium: 1
 Low: 1
 
 Informational: 0
-
-### github-branches
-
-Total: 12
-
-Critical: 0
-
-High: 0
-
-Medium: 12
-
-Low: 0
-
-Informational: 0
-
-### github-workflows
-
-Total: 12
-
-Critical: 0
-
-High: 0
-
-Medium: 0
-
-Low: 0
-
-Informational: 12
-
-### github-repos
-
-Total: 24
-
-Critical: 0
-
-High: 0
-
-Medium: 0
-
-Low: 24
-
-Informational: 0
-
-### github
-
-Total: 1
-
-Critical: 0
-
-High: 0
-
-Medium: 0
-
-Low: 1
-
-Informational: 0
 ```
 
 These reports are intended to support communication between security teams and leadership.
